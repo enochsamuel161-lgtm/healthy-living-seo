@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- SEO -->
     <title>Healthy Living SEO Project by Enoch Samuel | Lincoln University</title>
     <meta name="description" content="Healthy Living SEO Project by Enoch Samuel. Learn healthy eating, exercise, hydration, quality sleep, and wellness tips in this university SEO assignment.">
     <meta name="keywords" content="Healthy Living SEO Project, Enoch Samuel, Healthy Living Tips, SEO Assignment, Lincoln University, Nutrition, Exercise, Wellness">
     <meta name="author" content="Enoch Samuel">
+    <meta name="robots" content="index, follow">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://enochsamuel161-lgtm.github.io/healthy-living-seo/">
@@ -18,172 +19,382 @@
     <meta property="og:description" content="A university SEO project demonstrating healthy living tips and search engine optimization.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://enochsamuel161-lgtm.github.io/healthy-living-seo/">
+    <meta property="og:image" content="https://enochsamuel161-lgtm.github.io/healthy-living-seo/og-image.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Healthy Living SEO Project by Enoch Samuel">
     <meta name="twitter:description" content="University SEO Project demonstrating healthy lifestyle tips.">
 
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons (better than emojis) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="hero">
+    <!-- ===== HEADER / HERO ===== -->
+    <header class="hero" role="banner" aria-label="Hero section">
 
-    <nav class="navbar">
+        <!-- ===== NAVIGATION ===== -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
 
-        <div class="logo">
-            HealthyLife
+                <div class="logo" aria-label="HealthyLife logo">
+                    <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                    <span>HealthyLife</span>
+                </div>
+
+                <!-- Hamburger Menu Toggle -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks" role="menubar">
+                    <li role="none"><a href="#" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#tips" role="menuitem">Tips</a></li>
+                    <li role="none"><a href="#benefits" role="menuitem">Benefits</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- ===== HERO CONTENT ===== -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">University SEO Project</span>
+                <h1>Healthy Living <br><span class="highlight">SEO Project</span></h1>
+                <p class="hero-subtitle">
+                    By <strong>Enoch Samuel</strong> · Lincoln University
+                </p>
+                <p class="hero-description">
+                    Welcome to my university SEO project. This website shares practical
+                    healthy living tips including nutrition, exercise, hydration,
+                    quality sleep, and mental wellness for a healthier lifestyle.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#tips" class="btn btn-primary">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        Explore Healthy Tips
+                    </a>
+                    <a href="#benefits" class="btn btn-secondary">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Illustration (decorative) -->
+            <div class="hero-illustration" aria-hidden="true">
+                <div class="floating-icon icon-1">🥗</div>
+                <div class="floating-icon icon-2">🏃</div>
+                <div class="floating-icon icon-3">💧</div>
+                <div class="floating-icon icon-4">😴</div>
+                <div class="floating-icon icon-5">🧠</div>
+                <div class="floating-icon icon-6">❤️</div>
+            </div>
         </div>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#tips">Tips</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
 
-    </nav>
+    </header>
 
-    <div class="hero-content">
+    <!-- ===== TIPS SECTION ===== -->
+    <section class="container" id="tips" aria-labelledby="tips-heading">
+        <div class="section-header">
+            <span class="section-tag">Healthy Tips</span>
+            <h2 id="tips-heading">Your Guide to <span class="highlight">Healthy Living</span></h2>
+            <p class="section-subtitle">
+                Simple, practical tips to transform your daily habits and improve your wellbeing.
+            </p>
+        </div>
 
-        <h1>Healthy Living SEO Project by Enoch Samuel</h1>
+        <div class="cards-grid">
+            <article class="card card-1">
+                <div class="card-icon" aria-hidden="true">🥗</div>
+                <h3>Healthy Eating Tips</h3>
+                <p>
+                    Eating balanced meals filled with fruits, vegetables,
+                    proteins, and whole grains provides your body with the
+                    nutrients needed for a healthy life.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about healthy eating">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
 
-        <p>
-            Welcome to my university SEO project. This website shares practical
-            healthy living tips including nutrition, exercise, hydration,
-            quality sleep, and mental wellness for a healthier lifestyle.
-        </p>
+            <article class="card card-2">
+                <div class="card-icon" aria-hidden="true">🏃</div>
+                <h3>Exercise Every Day</h3>
+                <p>
+                    Regular exercise strengthens muscles,
+                    improves heart health,
+                    increases energy,
+                    and reduces stress.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about exercise">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
 
-        <a href="#tips" class="btn">Explore Healthy Tips</a>
+            <article class="card card-3">
+                <div class="card-icon" aria-hidden="true">💧</div>
+                <h3>Stay Hydrated</h3>
+                <p>
+                    Drinking enough water improves digestion,
+                    supports brain function,
+                    and keeps the body functioning properly.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about hydration">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
 
-    </div>
+            <article class="card card-4">
+                <div class="card-icon" aria-hidden="true">😴</div>
+                <h3>Get Quality Sleep</h3>
+                <p>
+                    Adults should get between seven and nine hours
+                    of quality sleep every night
+                    to improve physical and mental health.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about sleep">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
 
-</header>
+            <article class="card card-5">
+                <div class="card-icon" aria-hidden="true">🧠</div>
+                <h3>Mental Wellness</h3>
+                <p>
+                    Managing stress,
+                    spending time with loved ones,
+                    and maintaining a positive mindset
+                    contributes to better mental wellbeing.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about mental wellness">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
 
-<section class="container" id="tips">
+            <article class="card card-6">
+                <div class="card-icon" aria-hidden="true">❤️</div>
+                <h3>Benefits Overview</h3>
+                <p>
+                    Healthy habits improve energy,
+                    reduce disease risk,
+                    increase productivity,
+                    and promote a happier lifestyle.
+                </p>
+                <a href="#" class="card-link" aria-label="Read more about benefits">
+                    Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </article>
+        </div>
+    </section>
 
-    <div class="card">
-        <div class="icon">🥗</div>
+    <!-- ===== BENEFITS / ABOUT SECTION ===== -->
+    <section class="benefits" id="benefits" aria-labelledby="benefits-heading">
+        <div class="benefits-container">
+            <div class="benefits-content">
+                <span class="section-tag light">About This Project</span>
+                <h2 id="benefits-heading">University <span class="highlight">SEO Project</span></h2>
+                <p class="benefits-description">
+                    This website was created by <strong>Enoch Samuel</strong>
+                    as a university project to demonstrate Search Engine
+                    Optimization (SEO) techniques.
+                </p>
 
-        <h2>Healthy Eating Tips</h2>
+                <ul class="benefits-list" role="list">
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>Semantic HTML5 markup</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>Responsive web design</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>Google Search Console integration</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>Sitemap &amp; robots.txt implementation</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>GitHub Pages hosting</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <span>Open Graph &amp; Twitter Cards</span>
+                    </li>
+                </ul>
+            </div>
 
-        <p>
-            Eating balanced meals filled with fruits, vegetables,
-            proteins, and whole grains provides your body with the
-            nutrients needed for a healthy life.
-        </p>
-    </div>
+            <!-- Decorative stats -->
+            <div class="benefits-stats" aria-hidden="true">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Healthy Tips</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Responsive</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">SEO</span>
+                    <span class="stat-label">Optimized</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact" role="contentinfo">
+        <div class="footer-container">
 
-        <div class="icon">🏃</div>
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                    <span>HealthyLife</span>
+                </div>
+                <p class="footer-tagline">Living better, one habit at a time.</p>
+            </div>
 
-        <h2>Exercise Every Day</h2>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#tips">Tips</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </div>
 
-        <p>
-            Regular exercise strengthens muscles,
-            improves heart health,
-            increases energy,
-            and reduces stress.
-        </p>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            Enoch Samuel
+                        </li>
+                        <li>
+                            <i class="fas fa-university" aria-hidden="true"></i>
+                            Lincoln University
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:enoch@example.com">enoch@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-    </div>
+        </div>
 
-    <div class="card">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Healthy Living SEO Project</strong>. All Rights Reserved.</p>
+            <p class="footer-credit">Created with <i class="fas fa-heart" aria-hidden="true"></i> by Enoch Samuel</p>
+        </div>
+    </footer>
 
-        <div class="icon">💧</div>
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
-        <h2>Stay Hydrated</h2>
+    <!-- ===== JAVASCRIPT FOR RESPONSIVE NAVIGATION ===== -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
 
-        <p>
-            Drinking enough water improves digestion,
-            supports brain function,
-            and keeps the body functioning properly.
-        </p>
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
 
-    </div>
+        // Close menu when a link is clicked (for better UX)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
 
-    <div class="card">
+        // Close menu when clicking outside (optional)
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
 
-        <div class="icon">😴</div>
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
 
-        <h2>Get Quality Sleep</h2>
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
 
-        <p>
-            Adults should get between seven and nine hours
-            of quality sleep every night
-            to improve physical and mental health.
-        </p>
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-    </div>
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
 
-    <div class="card">
+        // Add animation on scroll (Intersection Observer)
+        const cards = document.querySelectorAll('.card');
 
-        <div class="icon">🧠</div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
 
-        <h2>Mental Wellness</h2>
-
-        <p>
-            Managing stress,
-            spending time with loved ones,
-            and maintaining a positive mindset
-            contributes to better mental wellbeing.
-        </p>
-
-    </div>
-
-    <div class="card">
-
-        <div class="icon">❤️</div>
-
-        <h2>Benefits of Healthy Living</h2>
-
-        <p>
-            Healthy habits improve energy,
-            reduce disease risk,
-            increase productivity,
-            and promote a happier lifestyle.
-        </p>
-
-    </div>
-
-</section>
-
-<section class="benefits" id="benefits">
-
-    <h2>About This SEO Project</h2>
-
-    <p>
-        This website was created by <strong>Enoch Samuel</strong>
-        as a university project to demonstrate Search Engine
-        Optimization (SEO) techniques using semantic HTML,
-        responsive web design,
-        Google Search Console,
-        sitemap submission,
-        robots.txt,
-        and GitHub Pages hosting.
-    </p>
-
-</section>
-
-<footer id="contact">
-
-    <h3>Healthy Living SEO Project</h3>
-
-    <p>Created by Enoch Samuel</p>
-
-    <p>Lincoln University</p>
-
-    <p>&copy; 2026 All Rights Reserved.</p>
-
-</footer>
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
 
 </body>
 </html>
