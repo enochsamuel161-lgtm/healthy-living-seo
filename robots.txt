@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enochsamuel161-lgtm.github.io/healthy-living-seo/sitemap.xml
